@@ -1,4 +1,4 @@
-package com.datdb.utils;
+package com.js.utils;
 
 import android.content.Context;
 import android.graphics.Typeface;

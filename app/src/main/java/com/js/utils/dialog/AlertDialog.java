@@ -1,4 +1,4 @@
-package com.datdb.utils.dialog;
+package com.js.utils.dialog;
 
 import android.app.Dialog;
 import android.content.Context;
@@ -12,7 +12,7 @@ import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 
-import com.datdb.utils.R;
+import com.js.utils.R;
 
 
 public class AlertDialog extends Dialog {

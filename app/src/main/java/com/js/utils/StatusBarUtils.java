@@ -1,4 +1,4 @@
-package com.datdb.utils;
+package com.js.utils;
 
 import android.annotation.TargetApi;
 import android.app.Activity;
