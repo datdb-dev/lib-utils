@@ -188,12 +188,12 @@ public class MethodUtils {
         return 0;
     }
 
-    public static void feedback(Context context, String app_name, String supportEmail, String version) {
+    public static void feedback(Context context, String app_name, String supportEmail, String version, int androidApi) {
         Intent emailIntent = new Intent(Intent.ACTION_SENDTO);
         emailIntent.setData(Uri.parse("mailto:"));
         emailIntent.putExtra(Intent.EXTRA_EMAIL, new String[]{supportEmail});
         emailIntent.putExtra(Intent.EXTRA_SUBJECT, "Feedback App: " +
-                app_name + "(" + context.getPackageName() + ", version: " + version + ")");
+                app_name + "(" + context.getPackageName() + ", version: " + version + ", api: " + androidApi + ")");
         emailIntent.putExtra(Intent.EXTRA_TEXT, "");
         context.startActivity(Intent.createChooser(emailIntent, "Send mail Report App !"));
     }
